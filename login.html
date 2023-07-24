@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url(assets/background.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+
+        .logo img {
+            width: 167px;
+            height: 44.467px;
+            margin: 25px 60px;
+        }
+
+        .login{
+            margin: 0px auto;
+            display: flex;
+            width: 450px;
+            height: 660px;
+            padding: 60px 68px 40px 68px;
+            flex-direction: column;
+
+            gap: 16px;
+
+            border-radius: 4px;
+            background: rgba(0, 0, 0, 0.75);
+        }
+
+        .login h1 {
+            width: 87px;
+            height: 50px;
+
+            color: #FFF;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        
+        .input input{
+            padding: 16px 20px;
+            width: 100%;
+            border-radius: 4px;
+            background: #333;
+            border: none;
+
+            color: #8C8C8C;
+            text-align: center;
+            font-family: 'Roboto';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-align: left;
+            
+        }
+
+        button {
+            color: #FFF;
+            text-align: center;
+            font-family: 'Roboto';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+
+            border: none;
+            padding: 16px 20px;
+            border-radius: 4px;
+            background: #A91013;
+        }
+
+        .lembre-se {
+            color: #8C8C8C;
+            display: flex;
+            justify-content: space-between;
+            font-family: Roboto;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        .lembre-se a {
+            text-decoration: none;
+            color: #8C8C8C;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="assets/logo.png" alt="logo">
+    </div>
+    <div class="login">
+        <form action="#">
+            <h1>Entrar</h1>
+            <div class="input">
+                <input type="text">
+            </div>
+            <div class="input">
+                <input type="password">
+            </div>
+            <button>Entrar</button>
+            <div class="lembre-se">
+                <div>
+                    <input type="checkbox" name="lembre-se" id="lembre-se">
+                    <label for="lembre-se">Lembre-se de mim</label>
+                </div>
+                <a href="#">Precisa de ajuda?</a>
+            </div>
+        </form>
+        <div class="conecta">
+            <div class="facebook">
+                <img src="assets/logos_facebook.svg" alt="logo-facebook">
+                <a href="#">Conectar-se com Facebook</a>
+            </div>
+            <div class="assinatura">
+                <p>Novo por aqui? <a href="#">Assine agora.</a></p>
+            </div>
+            <div class="mensagem">
+                <p>Essa página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#">Saiva
+                        mais</a></p>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
